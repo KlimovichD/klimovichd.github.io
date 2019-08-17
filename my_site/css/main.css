@@ -601,4 +601,7 @@ h6 {
 	.contact_item{
 		padding-bottom: 15px;
 	}
+	.back h4{
+		display: none;
+	}
 }
