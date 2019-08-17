@@ -604,4 +604,7 @@ h6 {
 	.back h4{
 		display: none;
 	}
+	.back i{
+		padding-top: 30px;
+	}
 }
