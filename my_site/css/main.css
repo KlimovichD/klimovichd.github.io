@@ -201,18 +201,18 @@ h6 {
 	margin-top: 2.5rem;
 }
 .skill_bar{
-	width: 530px;
+	width: 100%;
 	height: 24px;
 	background-color: #eeeeee;
 	font-size: 1.6rem;
 	color: #fff;
 }
-.bar1{width: 500px;}
-.bar2{width: 500px;}
-.bar3{width: 320px;}
-.bar4{width: 150px;}
-.bar5{width: 170px;}
-.bar6{width: 265px;}
+.bar1{width: 95%;}
+.bar2{width: 95%;}
+.bar3{width: 60%;}
+.bar4{width: 30%;}
+.bar5{width: 40%;}
+.bar6{width: 50%;}
 
 .bar1 span::after{content: '95%';}
 .bar2 span::after{content: '95%';}
@@ -447,3 +447,158 @@ h6 {
 	margin-top: 50px;
 }
 
+
+/*Выпадающее меню*/
+
+.menu_column{
+	display: none;
+}
+.menu-block{
+	position: relative;
+}
+.menu-btn{
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+
+	position: relative;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after{
+	position: absolute;
+	top: 50%; margin-top: -1.5px;
+	left: 50% ; margin-left: -10px;
+	width: 20px;
+	height: 3px;
+	background-color: #000;
+	border-radius: 5px;
+}
+.menu-btn span::before{
+	content:'';
+	transform: translateY(-7px);
+	transition: 0.3s;
+}
+
+.menu-btn span::after{
+	content:'';
+	transform: translateY(7px);	
+	transition: 0.3s;
+}
+.menu-btn_active span{
+	height: 0;
+}
+.menu-btn_active span::before{
+	transform: rotate(40deg);
+}
+.menu-btn_active span::after{
+	transform: rotate(-40deg);
+}
+
+.menu-nav{
+	position: absolute;
+	top: 55px;
+	right: 0;
+	width: 100px;
+	transition: 0.5s;
+	transform-origin: top center;
+	transform: scaleY(0);
+	opacity: 0;
+
+}
+.menu-nav_active{
+	transform: scaleY(1);
+	opacity: 1;
+}
+.menu-nav a{
+	display: inline-block;
+	width: 110px;
+	height: 35px;
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #fff;
+	background-color: #222;
+	padding: 7px 10px;
+	margin-bottom: 8px;
+	border-radius: 20px;
+}
+
+/*Выпадающее меню*/
+
+
+
+/*Responsive*/
+/*992-1200px*/
+
+@media screen and (max-width:1200px){
+
+}
+
+/*768-992px*/
+@media screen and (max-width:991px){
+	
+	
+
+}
+
+/*576-768px*/
+@media screen and (max-width:768px){
+	.menu_column{
+		display: block;
+		position: absolute;
+		top: 17px;
+		right: 0;
+	}
+	.desktop-menu{
+		display: none;
+	}
+	.language{
+	top: 8rem;
+    left: 9rem;
+	}
+	.card{
+		margin: 0 auto;
+	}
+	.menu-nav{
+		right: 30px;
+	}
+
+
+}
+/*320-576px*/
+@media screen and (max-width:576px){
+	.menu_column{
+		display: block;
+		top: 17px;
+		right: 20px;
+	}
+	.language{
+		top: 8rem;
+    	left: 4rem;
+	}
+	.portrait{
+		display: none;
+	}
+	.about{
+		padding-bottom: 5rem;
+	}
+	.home_text h1{
+		font-size: 4rem;
+	}
+	.card{
+		margin: 0 auto;
+		width: 300px;
+		height: 156px;
+		padding-bottom: 30px;
+	}
+	.front,.back{
+		width: 300px;
+		height: 156px;
+	}
+	.contact_item{
+		padding-bottom: 15px;
+	}
+}
