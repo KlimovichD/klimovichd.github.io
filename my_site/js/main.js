@@ -1,17 +1,8 @@
 //Фиксация навигации сверху
-window.onload = function(){
-	window.onscroll = function showHeader(){
-		var header = document.querySelector('.header');
 
-		if(window.pageYOffset > 300){
-			header.classList.add('header_fixed');
-		}
-		else{
-			header.classList.remove('header_fixed');
-		}
-	}
+if ($( document ).width() > 992) {
+  $.getScript( "header.js");
 }
-
 
 //Всплывающее окно с картинкой
 $('#inline-popups').magnificPopup({
@@ -42,7 +33,12 @@ $(document).ready(function(){
   });
   $('.social-icon').hover(
        function(){ $(this).addClass('animated jello') },
-       function(){ $(this).removeClass('animated jello') }
-);
+       function(){ $(this).removeClass('animated jello') });
+  
 });
 
+$('.menu-btn').on('click', function(e){
+    e.preventDefault;
+    $(this).toggleClass('menu-btn_active');
+    $('.menu-nav').toggleClass('menu-nav_active');
+});
