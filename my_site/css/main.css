@@ -1,0 +1,449 @@
+html{
+	font-size: 10px;
+
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+p, ul, li{
+	margin: 0;	
+	padding: 0;	
+}
+ul,li{
+	list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+}
+/*Общие стили*/
+.language{
+	font-size: 1.3rem;	
+	position: absolute;
+	top: 70px;
+    right: 120px;
+}
+.language a{
+	color: #fff;	
+}
+.language a:active{
+	border-bottom: 1px solid #fff;
+}
+.heads_outline{
+	border-radius: 0;
+	height: 3px;
+	width: 75px;
+	display: inline-block;
+	margin-bottom: 20px;
+	background-color: #339999;
+}
+
+.about_text,
+.services_text,
+.portfolio_text,
+.contact_text{
+	margin: 0 auto;
+	max-width: 80rem;
+	padding-bottom: 7rem;
+	color: #1c1c1c;
+	font-size: 1.5rem;
+}
+
+.about h2,
+.services h2,
+.portfolio h2,
+.contact h2{
+	font-size: 2.8rem;
+	position: relative;
+	padding: 80px 0 15px;
+	text-transform: uppercase;
+	color: #000;
+
+}
+.about_text p,
+.services_text p{
+	font-size: 1.5rem;
+	color: #000;
+}
+
+
+/* Стиль header*/
+
+.header{
+	background-color: #339999;
+}
+.header_fixed{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	animation-name: show_header;
+	animation-duration: 1s;
+}
+
+@keyframes show_header{
+	0%{
+		opacity: 0;
+		top: -70px;	
+	}
+	100%{
+		opacity: 1;
+		top:0;
+	}
+	
+}
+
+
+.desktop-menu ul{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+.desktop-menu a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.logo{
+	font-size: 5rem;
+	font-weight: 700;
+	text-decoration: none;
+	color: #fff;
+}
+.logo:hover{
+	text-decoration: none;
+	color:#fff;
+}
+
+/*Стили Home*/
+
+
+.home{
+	background-color: #339999;
+}
+.home_text{
+	max-width: 90rem;
+	margin-top: 18rem;
+}
+.home_text h1{
+	font-size: 7rem;
+	font-weight: 700;
+	line-height: 80px;
+	word-spacing: 20px;
+}
+.home_content{
+	font-size: 3rem;
+	
+}
+.home_content span{
+	font-weight: 700;
+}
+.home_text-about{
+	font-size: 1.6rem;
+	margin: 2rem 0 3.5rem;
+}
+
+.top_btn{
+	font-size: 1.6rem;
+	font-weight: 700;
+	padding: 0 3.4rem;
+	line-height: 4.5rem;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	display: inline;
+	margin: 4rem 0 10rem;
+	transition: 0.5s;
+}
+.top_btn:hover{
+	background-color: #fff;
+	color: #339999
+}
+
+
+
+/*ABOUT ME SECTION*/
+
+.about{
+	background-color: #f7f7f7;
+	color: #1c1b1b;
+	padding-bottom: 10rem;
+}
+
+
+
+.about_wrap{
+	background-color: #fff;
+	padding: 1rem;
+	margin: 0 0 90px;
+}
+
+
+.skills_desk{
+	margin-top: 0.5rem;
+}
+.skills_desk h3{
+	font-size: 2rem;
+	margin-top: 3.5rem;
+
+}
+.skills_desk h5{
+	color:#444444;
+	font-size: 1.5rem;
+	margin-top: 2.5rem;
+}
+.skill_bar{
+	width: 530px;
+	height: 24px;
+	background-color: #eeeeee;
+	font-size: 1.6rem;
+	color: #fff;
+}
+.bar1{width: 500px;}
+.bar2{width: 500px;}
+.bar3{width: 320px;}
+.bar4{width: 150px;}
+.bar5{width: 170px;}
+.bar6{width: 265px;}
+
+.bar1 span::after{content: '95%';}
+.bar2 span::after{content: '95%';}
+.bar3 span::after{content: '60%';}
+.bar4 span::after{content: '30%';}
+.bar5 span::after{content: '40%';}
+.bar6 span::after{content: '50%';}
+
+.shine {
+	display: inline-block;;
+	height: 24px;
+	position: relative;
+}
+.shine span {
+ 	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #339999;                    
+	animation: animate-shine 1.5s ease;
+}
+.shine span::after{
+	position: absolute;
+	left: 50%;
+}
+@keyframes animate-shine {
+ 0% {opacity: 0.5; width: 0;}
+ 100% {opacity: 1; width: 100%;}
+}
+
+
+
+
+
+.social-links{
+	margin-top: 1.6rem;
+	font-size: 1.7rem;
+
+}
+.social-links a{
+	width: 3.5rem;
+	height: 3.5rem;
+	border: 1px solid #000;
+	border-radius: 50%;
+	margin-right: 1.1rem;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 3px;
+	color: #000;
+	transition: all 0.3s;
+}
+.social-links a:hover{
+	border-color: #339999;
+	color: #339999;
+}
+
+
+/*Секция услуги*/
+.services{
+	padding-bottom: 8rem;
+}
+.services h2{
+	color: #000;
+}
+.services_item{
+	background-color: #f8f8f8;
+	color: #000;
+	text-align: center;
+	margin: 15px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 20px 0;
+	transition: all 0.3s;
+}
+.services_item i{
+	font-size: 4rem;
+	margin-bottom: 25px;
+	transition: all 0.3s;
+
+}
+.services_item h4{
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+.services_item p{
+	font-size: 1.4rem;
+	color: #555;
+}
+
+.services_item:hover{
+	background-color: #fff;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.services_item:hover i{
+	color: #339999;
+}
+.html-icon{
+	color: #fa9e32;
+}
+.css-icon{
+	color: #797cff;
+}
+.js-icon{
+	color:#e1ed19;
+}
+
+
+
+/* Portfolio*/
+.portfolio{
+	padding-bottom: 80px;
+}
+
+.card{
+	position: relative;
+	width: 350px;
+	height: 250px;
+	perspective: 1000px;
+	border:none;
+}
+.front,.back{
+	position: absolute;
+	width: 350px;
+	height: 250px;
+	top: 0;
+	left: 0;
+	text-align: center;
+	transition: 1s;
+
+}
+.back{
+	text-align: center;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	font-size: 2rem;
+}
+.card:hover .front{
+	transform: rotateY(180deg);
+}
+.card:hover .back{
+	transform: rotateY(360deg);
+}
+.back h4{
+	padding-top: 50px;
+}
+.back a{
+	color: #fff;
+}
+
+
+
+.contact_item i{
+	font-size: 2.5rem;
+	padding: 20px;
+	background-color: #339999;
+	border-radius: 50%;
+}
+.contact_item p{
+	color: #000;
+	font-size: 1.5rem;
+	margin: 15px 0 35px;
+}
+.form{
+	margin: 2rem 0 5rem;
+}
+.form input,
+.form textarea:focus{
+	outline: none;
+}
+.form input{
+	display: block;
+	width: 100%;
+	background: transparent;
+	border-radius: 4px;
+	color: #333;
+	font-size: 15px;
+	border: 1px solid #888;
+	height: 45px;
+	margin-bottom: 24px;
+	padding-left: 10px;
+}
+.form textarea{
+	display: block;
+	width: 100%;
+	background: transparent;
+    border: 1px solid #888;
+    border-radius: 4px;
+    color: #333;
+    font-size: 18px;
+    padding: 10px;
+    height: 190px;
+    margin-bottom: 25px;
+    resize: none;	
+}
+.form button{
+	display: block;
+    border: 1px solid #888;
+    color: #555;
+    font-weight: 700;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    font-size: 1.6rem;
+	padding: 0 3.4rem;
+	line-height: 4.5rem;
+	border-radius: 5px;
+}
+.form button:hover{
+	background-color: #339999	;
+}
+.form button:focus{
+	outline: none;
+}
+.footer{
+	color: #000;
+	text-align: center;
+	background-color: #f2eded;
+	padding: 3rem 0;
+	font-size: 1.3rem;
+}
+.footer p{
+	display: inline;
+}
+
+.img2-popup{
+	position: relative;
+	width: auto;
+	height: auto;
+	text-align: center;
+	margin-top: 50px;
+}
+
