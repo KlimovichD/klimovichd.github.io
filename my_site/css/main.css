@@ -30,6 +30,7 @@ h6 {
 	position: absolute;
 	top: 70px;
     right: 120px;
+    z-index: 50;
 }
 .language a{
 	color: #fff;	
@@ -159,7 +160,7 @@ h6 {
 	border: 2px solid #fff;
 	border-radius: 5px;
 	color: #fff;
-	display: inline;
+	display: inline-block;
 	margin: 4rem 0 10rem;
 	transition: 0.5s;
 }
@@ -185,7 +186,10 @@ h6 {
 	padding: 1rem;
 	margin: 0 0 90px;
 }
-
+.portrait{
+	max-width: 542px;
+	max-height: 650px;
+}
 
 .skills_desk{
 	margin-top: 0.5rem;
@@ -331,14 +335,17 @@ h6 {
 .card{
 	position: relative;
 	width: 350px;
-	height: 250px;
+	height: 220px;
 	perspective: 1000px;
 	border:none;
 }
+.front_zoom-mob{
+	display: none;
+}
 .front,.back{
 	position: absolute;
-	width: 350px;
-	height: 250px;
+	width: 100%;
+	height: 100%;
 	top: 0;
 	left: 0;
 	text-align: center;
@@ -346,7 +353,6 @@ h6 {
 
 }
 .back{
-	text-align: center;
 	backface-visibility: hidden;
 	transform: rotateY(180deg);
 	font-size: 2rem;
@@ -363,7 +369,9 @@ h6 {
 .back a{
 	color: #fff;
 }
-
+.back a:hover i{
+	color: #1c1c1c;
+}
 
 
 .contact_item i{
@@ -452,15 +460,17 @@ h6 {
 
 .menu_column{
 	display: none;
+	z-index: 50;
 }
 .menu-block{
 	position: relative;
+	z-index: 50;
 }
 .menu-btn{
 	display: inline-block;
 	width: 45px;
 	height: 45px;
-
+	z-index: 50;
 	position: relative;
 }
 
@@ -505,25 +515,27 @@ h6 {
 	transform-origin: top center;
 	transform: scaleY(0);
 	opacity: 0;
+	z-index: 50;
 
 }
 .menu-nav_active{
 	transform: scaleY(1);
 	opacity: 1;
+	z-index: 50;
 }
 .menu-nav a{
 	display: inline-block;
-	width: 110px;
-	height: 35px;
 	text-decoration: none;
 	color: #000;
 	text-transform: uppercase;
 	font-size: 15px;
 	color: #fff;
-	background-color: #222;
+	border:1px solid #222;
 	padding: 7px 10px;
 	margin-bottom: 8px;
 	border-radius: 20px;
+	cursor: pointer;
+	z-index: 50;
 }
 
 /*Выпадающее меню*/
@@ -534,18 +546,63 @@ h6 {
 /*992-1200px*/
 
 @media screen and (max-width:1200px){
-
+	
 }
 
 /*768-992px*/
 @media screen and (max-width:991px){
-	
-	
+	.about{
+		padding-bottom: 5rem;
+	}
+	.front_zoom-mob{
+		display: block;
+		margin: 0 auto;
+		transform: translateY(-450%);
+		color: #fff;
+		font-size: 3rem;
+		z-index: 15;
+	}
+	.card:hover .front{
+		transform:none;
+	}
+	.front_zoom-mob{
+		display: block;
+		margin: 0 auto;
+		transform: translateY(-400%);
+		color: #fff;
+		font-size: 3rem;
+		z-index: 15;
+	}
+	.back{
+		display: none;
+	}
+	.home_text h1{
+		margin-bottom: 20px;
+	}
+	.portrait{
+		margin: 0 auto;
+		padding-top: 25px;
+	}
+	.card{
+		margin: 0 auto;
+		padding-bottom: 15px;	
+	}
 
 }
 
 /*576-768px*/
 @media screen and (max-width:768px){
+	.front_zoom-mob{
+		display: block;
+		margin: 0 auto;
+		transform: translateY(-400%);
+		color: #fff;
+		font-size: 3rem;
+		z-index: 15;
+	}
+	.header_fixed{
+		display: none;
+	}
 	.menu_column{
 		display: block;
 		position: absolute;
@@ -570,6 +627,20 @@ h6 {
 }
 /*320-576px*/
 @media screen and (max-width:576px){
+	.menu-nav{
+		top: 0;
+	}
+	.front_zoom-mob{
+		display: block;
+		margin: 0 auto;
+		transform: translateY(-250%);
+		color: #fff;
+		font-size: 3rem;
+		z-index: 15;
+	}
+	.services{
+		padding-bottom: 4rem;
+	}
 	.menu_column{
 		display: block;
 		top: 17px;
@@ -586,12 +657,12 @@ h6 {
 		padding-bottom: 5rem;
 	}
 	.home_text h1{
-		font-size: 4rem;
+		font-size: 5rem;
 	}
 	.card{
 		margin: 0 auto;
 		width: 300px;
-		height: 156px;
+		height: 187px;
 		padding-bottom: 30px;
 	}
 	.front,.back{

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>My site</title>
+	<title>Веб-разработчик Дмитрий Климович</title>
 	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
-	<!-- Open Sans for body font -->
+	 <!-- Open Sans for body font -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-	<!--     Poppins for Title -->
+<!--     Poppins for Title -->
   	<link href="https://fonts.googleapis.com/css?family=Poppins:700,900&display=swap" rel="stylesheet">
   	<link rel="stylesheet" href="css/all.min.css">
   	<link rel="stylesheet" href="css/magnific-popup.css">
@@ -26,21 +26,39 @@
 	<header class="header">
 		<div class="container">
 			<div class="row align-items-center">
-				<div class="col-1">
-					<a class="logo" href="#">
+				<div class="сol-2 col-sm-2">
+					<a class="logo" href="#home_anchor">
 						DK
 					</a>
 				</div>
-				<div class="offset-4 col-7 ">
-					<nav class="desktop-menu">
+				<div class="offset-3 col-7">
+					<nav class="desktop-menu" id="desktop-menu">
 						<ul class="d-flex justify-content-between "> 
 							<li><a href="#home">Домой</a></li>
-							<li><a href="#about">обо мне</a></li>
-							<li><a href="#services">скиллы</a></li>
-							<li><a href="#portfolio">портфолио</a></li>
-							<li><a href="#contact">контакт</a></li>
+							<li><a href="#about">Обо мне</a></li>
+							<li><a href="#services">Навыки</a></li>
+							<li><a href="#portfolio">Портфолио</a></li>
+							<li><a href="#contact">Контакт</a></li>
 						</ul>
 					</nav>
+				</div>
+
+				<div class="offset-6 col-2 menu_column">
+					<div class="menu-block">
+						<a href="#" class="menu-btn">
+							<span></span>
+						</a>
+						<nav class="menu-nav">
+							<ul>
+								<li><a href="#home">Домой</a>
+								</li>
+								<li><a href="#about">Обо мне</a></li>
+								<li><a href="#services">Навыки</a></li>
+								<li><a href="#portfolio">Портфолио</a></li>
+								<li><a href="#contact">Контакт</a></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -48,16 +66,17 @@
 
 
 	<section class="home" id="home">
-		<div class="container">
-			<p class="language"> <a href="index.html">EN</a>|<a href="ru.html">RU</a> </p>
+		<div class="container" id="home_anchor">
+			
 			<div class="row justify-content-center">
+				<p class="language"> <a href="index.html">EN</a>|<a href="ru.html">RU</a> </p>
 				<div class="col-10 text-center">
 					<div class="home_text animated fadeInUpBig">
 						<h1 class="">Дмитрий Климович</h1>
-						<p class="home_content">I am <span>Web Developer</span></p>
+						<p class="home_content">Я <span>Веб-разработчик</span></p>
 						<p class="home_text-about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolorem nobis sit tenetur at voluptate, modi, explicabo pariatur dolorum fuga blanditiis ab reprehenderit! Officia nulla provident, consectetur neque quibusdam maiores?</p>
 					</div>
-					<button href="#portfolio" class="btn top_btn animated fadeInUpBig">Посмотреть работы</button>
+					<a href="#my_work" class="btn top_btn animated fadeInUpBig">Посмотреть работы</a>
 				</div>
 			</div>
 
@@ -83,13 +102,13 @@
 				<div class="row">
 					<div class="col-lg-6">
 						<div class="portrait animated fadeInLeft wow">
-							<img src="img/profile.jpg" alt="" width="542" height="650">
+							<img src="img/profile.jpg" alt="" width="100%" height="100%">
 						</div>
 					</div>
 					<div class="col-lg-6">
 						<div class="skills_desk animated fadeInRight wow">
 							<h3>
-								Навыки
+								Умения
 							</h3>
 							<div class="skill_item">
 								<h5>HTML5</h5>
@@ -170,7 +189,7 @@
 			<div class="row">
 				<div class="col-12 text-center">
 					<div class="services_text animated fadeInUp wow">
-						<h2>Скиллы</h2>
+						<h2>Навыки</h2>
 						<span class="heads_outline"></span>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam consequatur, quasi quia ab obcaecati excepturi consectetur praesentium totam molestiae vitae!</p>
 					</div>
@@ -227,7 +246,7 @@
 	<section class="portfolio" id="portfolio">
 		<div class="container">
 			<div class="row">
-				<div class="col-12  text-center">
+				<div class="col-12  text-center" id="my_work">
 					<div class="portfolio_text animated fadeInUp wow">
 						<h2>Портфолио</h2>
 						<span class="heads_outline"></span>
@@ -235,9 +254,15 @@
 				</div>
 			</div>
 			<div class="row animated fadeInUp wow">
-				<div class="col-12 col-sm-6 col-lg-4">
+				<div class="col-12 col-sm-12 col-lg-6 col-xl-4">
 					<div class="card">
-						<img class="front" src="img/portfolio/restaurant.png" alt="">
+						<div class="front">
+							<img class="" src="img/portfolio/restaurant.png" alt="" width="100%" height="100%">
+							<a href="#image1" class="front_zoom-mob open-popup-link" data-effect="mfp-zoom-in" id="inline-popups">
+								<i class="fas fa-search"></i>
+							</a>
+						</div>
+
 						<div class="back">
 							<h4>Ресторан</h4>
 							<a href="#image1" class="open-popup-link" data-effect="mfp-zoom-in" id="inline-popups">
@@ -252,9 +277,14 @@
 
 
 
-				<div class="col-12 col-sm-6 col-lg-4">
+				<div class="col-12 col-sm-12 col-lg-6 col-xl-4">
 					<div class="card">
-						<img class="front" src="img/portfolio/foinni.png">
+						<div class="front">
+							<img class="" src="img/portfolio/foinni.png" width="100%" height="100%">
+							<a href="#image1" class="front_zoom-mob open-popup-link" data-effect="mfp-zoom-in" id="inline-popups">
+								<i class="fas fa-search"></i>
+							</a>
+						</div>
 						<div class="back">
 							<h4>Веб-студия</h4>
 							<a href="#image2" class="open-popup-link"  data-effect="mfp-zoom-in">
@@ -270,9 +300,14 @@
 
 
 
-				<div class="col-12 col-sm-6 col-lg-4">
+				<div class="col-12 col-sm-12 col-lg-6 col-xl-4">
 					<div class="card">
-						<img class="front" src="img/portfolio/enterprise.png" alt="">
+						<div class="front">
+							<img class="" src="img/portfolio/enterprise.png" alt="" width="100%" height="100%">
+							<a href="#image1" class="front_zoom-mob open-popup-link" data-effect="mfp-zoom-in" id="inline-popups">
+								<i class="fas fa-search"></i>
+							</a>
+						</div>
 						<div class="back">
 							<h4>Предприятие</h4>
 							<a href="#image3" class="open-popup-link"  data-effect="mfp-zoom-in">
@@ -280,7 +315,7 @@
 							</a>
 						</div>
 						<div id="image3" class="img2-popup mfp-hide animated zoomIn">
-							<img src="img/" width="65%" height="100%">
+							<img src="img/portfolio/enterprise.png" width="65%" height="100%">
 						</div>
 					</div>
 				</div>
@@ -323,9 +358,9 @@
 			<div class="row">
 				<div class="col-12">
 					<form enctype="multipart/form-data" method="POST" class="form animated fadeInUp wow" id="form">
-						<input type="text" required placeholder="Ваше имя" name="name">
-						<input type="email" required placeholder="Ваш емеил" name="email">
-						<textarea name="text" placeholder="Сообщение.."></textarea>
+						<input type="text" required placeholder="Your name" name="name">
+						<input type="email" required placeholder="Your e-mail" name="email">
+						<textarea name="text" placeholder="Your message"></textarea>
 						<button type="submit" class="btn btn-outline-dark m-auto">Отправить</button>
 					</form>
 				</div>
@@ -375,7 +410,16 @@
 		  });
 		});
 	</script>
-	
+	<script>
+		function screen_check(){
+			if ($(window).width() <= 768) { 
+		    	 document.getElementById("desktop-menu").hidden=true;
+		            } ;
+		        }
+		screen_check();
+		$(window).on('resize', function(){
+		    screen_check();
+		});
+	</script>
 </body>
 </html>
-
