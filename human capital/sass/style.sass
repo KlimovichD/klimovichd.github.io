@@ -1,0 +1,593 @@
+/*Colors*/
+$navy: #0B233F
+$coral: #FF8F80
+.intro img
+   max-width: 100%
+h1, h2, h3, h4, h5, h6
+   font-family: 'Bitter', sans-serif
+   color: $navy
+p
+   color: $navy
+body
+   font-size: 20px
+   font-family: 'Open Sans', sans-serif
+.img__custom-width
+   max-width: 100%
+.main__button
+   text-transform: uppercase
+   font-size: 15px
+   color: $navy
+   padding: 12px 25px
+   background: $coral
+   font-weight: bold
+   display: inline-block
+   transition: all 0.3s
+   &:hover
+      text-decoration: none
+      background: #FFC4BD
+.header
+   background-color: $navy
+   padding: 25px 0
+   &__list
+      font-size: 16px
+      list-style: none
+      &-item
+         margin-left: 15px
+         z-index: 10
+      &-link
+         color: $coral
+         text-decoration: none
+         position: relative
+         &:hover
+            text-decoration: none
+            color: darken($coral, 20%)
+         &::before
+            content: ''
+            bottom: 0
+            left: 0
+            position: absolute
+            width: 100%
+            height: 2px
+            background-color: $coral
+            transition: 0.2s
+            transform: scaleX(0)
+         &:hover::before
+            transform: scaleX(1)
+   &_fixed
+      position: fixed
+      left: 0
+      top: 0
+      width: 100%
+      z-index: 10
+      animation-name: show_header
+      animation-duration: 1s
+
+   @keyframes show_header
+      0%
+         opacity: 0;
+         top: -70px;
+      100%
+         opacity: 1
+         top: 0
+
+
+.intro
+   background: $navy 
+   color: #ffffff
+   position: relative
+   padding-bottom: 60px
+   &-team
+      min-height: 100vh
+      padding-top: 100px
+      background: $navy url('../img/team/pattern-team.png') no-repeat bottom -80px right -50px
+   &-join-us
+      background: $navy
+   &__head
+      font-size: 60px
+      margin-bottom: 20px
+      color: #ffffff
+   &__text
+      max-width: 370px
+      color: #ffffff
+   &__patern
+      position: absolute
+      top: -92px
+      right: 0
+      &-first-job
+         position: absolute
+         bottom: 0
+         left: 0
+   &__dots
+      &-next-job
+         position: absolute
+         bottom: -45px
+         left: -45px
+      &-ventures
+         position: absolute
+         bottom: 0
+         right: 0
+   &__button
+      margin-top: 40px
+
+
+.describe
+   text-align: center
+   padding-top: 80px
+   margin-bottom: 130px
+   position: relative
+   &__head
+      font-size: 30px
+      margin: 30px 0 15px      
+   &__text
+      font-size: 25px
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+   &__lines
+      position: absolute
+      top: -80px
+      right: 0
+.section
+   position: relative
+   margin-bottom: 190px
+   &__sand
+      position: absolute
+      top: 0
+      left: 5%
+      &-right
+         position: absolute
+         top: 0
+         right: 5%
+         &-advice
+            top: 7%
+   &__desc
+      color: $coral
+      font-size: 18px
+      margin-top: 80px
+      display: block
+   &__head
+      font-size: 50px
+      margin-top: 20px
+      margin-bottom: 20px
+      z-index: 10
+   &__button
+      text-transform: uppercase
+      font-size: 15px
+      color: $navy
+      padding: 15px 25px
+      border: 3px solid $coral
+      font-weight: bold
+      margin-top: 70px
+      display: inline-block
+      transition: all 0.3s
+      z-index: 99
+      &:hover
+         text-decoration: none
+         border-color: #FFC4BD
+   &__ventures
+      margin-bottom: 120px
+      &-image
+         margin-top: -50px
+   &__advice
+      &-desc
+         margin-top: 0
+      &-image
+         margin-left: -20px
+   &__team
+      background: #BB945B url(../img/pattern-bot.png) no-repeat center center /cover
+      text-align: center
+      position: relative
+      &-desc
+         display: block
+         color: $navy
+         font-size: 18px
+         margin-top: 110px
+      &-head
+         font-size: 50px   
+         color: #ffffff
+         margin-top: 25px
+      &-text
+         display: inline-block
+         color: #ffffff
+         margin-bottom: 150px
+         margin-top: 30px
+         max-width: 550px
+         line-height: 28px
+      &-ellipse
+         position: absolute
+         bottom: -32px
+         left: 45px 
+   &__principles
+      text-align: center
+      color: $navy
+      margin-top: 70px
+      &-item
+         text-align: center
+         margin-top: 70px
+      &-title
+         font-size: 30px
+         margin-top: 50px
+         margin-bottom: 30px
+      &-text
+         min-height: 200px
+      &-circles
+         position: absolute
+         bottom: -215px
+         left: 500px
+         z-index: 10
+      &-lines
+         position: absolute
+         right: 0
+         top: 60%
+   &__process
+      margin-bottom: 100px
+      &-line
+         position: absolute
+         left: 50%
+         top: 150px
+      &-head
+         text-align: center
+         margin-top: 80px
+         margin-bottom: 210px
+      &-title
+         font-size: 30px
+         margin-left: 30px
+         margin-bottom: 25px
+      &-text
+         margin-left: 30px
+         margin-bottom: 150px
+         &-journey
+            margin-bottom: 190px
+      &-icon
+         margin-top: -50px
+         &-right
+            margin-left: 25px
+      &-ellipse
+         position: absolute
+         bottom: -135px
+         right: 5%
+         z-index: 10
+   &__members
+      background: #BB945B
+      padding-top: 80px
+      padding-bottom: 100px
+      text-align: center
+      margin-bottom: 0
+      &-icon
+         display: inline-block
+         margin-right: 25px
+      &-row1
+         margin-top: 50px
+         margin-bottom: 25px
+      &-dots
+         position: absolute
+         left: -12px
+         bottom: -51px
+   &__clients
+      padding-top: 80px
+      padding-bottom: 100px
+      text-align: center
+      margin-bottom: 0
+      &-icon
+         display: inline-block
+         margin-right: 25px
+      &-row1
+         margin-top: 50px
+         margin-bottom: 25px
+   &__faqs
+      background: #D5D0CA
+      padding: 100px 0
+      margin-bottom: 0
+      position: relative
+      
+      &-head
+         text-align: center
+         padding-bottom: 85px
+      &-title
+         font-size: 30px
+      &-list
+         list-style: disk
+         margin-left: 80px
+         transform: scaleY(0)
+         opacity: 0
+         transform-origin: top center
+         transition: 0.5s
+         
+         & h3
+            font-size: 24px
+            font-weight: bold
+            margin-top: 30px
+            margin-bottom: 20px
+         & p
+            font-size: 18px
+         &-active
+            transform: scaleY(1)  
+            opacity: 1
+            margin-top: 15px
+            margin-bottom: 50px
+            line-height: 30px
+      &-lines
+         position: absolute
+         bottom: 0
+         right: 5%
+              
+      &-button
+         width: 37px
+         height: 37px
+         border-radius: 100px
+         border: 2px solid $coral
+         position: relative
+         margin-right: 20px
+         background-color: #fff
+         transition: all 0.3s
+         
+         &-active
+            transition: all 0.3s ease
+            &::after
+               content: ''
+               display: none
+            &::before
+               content: ''
+               transform: rotate(90deg)
+         &::after
+            content: ''
+            height: 2px
+            width: 20px
+            background-color: $coral
+            position: absolute
+            top: 50%
+            left: 50%
+            margin-left: -10px
+            margin-top: -1px
+            border-radius: 3px
+         &::before
+            content: ''
+            height: 20px
+            width: 2px 
+            background-color: $coral  
+            position: absolute
+            top: 50%
+            left: 50%
+            margin-top: -10px
+            margin-left: -1px
+            border-radius: 3px
+   &__investment
+      background: #C5DEE3
+      padding: 100px 0 120px
+      position: relative
+      margin-bottom: 0
+      &-head
+         text-align: center
+         margin-bottom: 90px
+      &-icon
+         margin-bottom: 30px
+      &-text
+         z-index: 20
+         margin: 30px auto 0
+         max-width: 400px
+      &-pattern
+         position: absolute
+         bottom: -100px
+         left: 0
+   &__companies
+      margin-top: 100px
+      margin-bottom: 120px
+      &-head
+         font-size: 40px
+      &-text
+         margin-top: 30px  
+         margin-bottom: 50px
+      &-block
+         background: url('../img/ventures/border.png') no-repeat left top
+         &-right
+           background: url('../img/ventures/border.png') no-repeat right 
+      &-desc
+         margin-left: 7%
+         margin-bottom: 100px
+         &-right
+            margin-right: 3%
+            margin-left: 0
+
+      &-title
+         margin-top: 80px
+      &-portrait
+         z-index: 99
+         display: block
+   &__advice
+      text-align: center
+      margin: 0
+      padding: 120px 0
+      &-text
+         max-width: 700px
+         margin: auto
+   &__squad
+      margin-bottom: 100px
+      &-wrap
+         position: absolute
+         left: 50%
+         top: -300px
+      &-image
+         widows: 130%
+         position: relative
+         left: -50%
+         top: 0
+        
+      &-block
+         max-width: 580px
+         text-align: center
+         margin: 400px auto 0
+      &-text
+         margin-bottom: 40px
+   &__values
+      background: #C5DEE3 url('../img/team/pattern-values.svg') no-repeat center center
+      margin-bottom: 0
+      &-head
+         text-align: center
+         padding-top: 80px
+         margin: 0 0 70px 0
+      &-block
+         max-width: 190px
+         text-align: center
+         margin: auto
+      &-title
+         margin-top: 25px
+         margin-bottom: 115px
+      &-lines
+         display: block
+         position: absolute
+         left: 0
+         top: -30%
+      &-circle
+         position: absolute
+         right: 5%
+         bottom: -13%
+         z-index: 10 
+   &__hq-team
+      margin-bottom: 100px
+      &-head
+         text-align: center
+         margin-top: 110px
+         margin-bottom: 70px
+      &-block
+         background: #d5d0ca85
+         height: 500px
+         width: min-content
+         margin-bottom: 25px
+         border-radius: 5px
+         position: relative
+         box-sizing: border-box
+
+      &-name
+         font-size: 30px
+         margin: 20px
+      
+      &-text
+         margin-left: 20px
+         margin-bottom: 50px
+      &-link
+         padding: 8px
+         border: 2px solid $coral
+         border-radius: 100px
+         display: inline-block
+         font-size: 18px
+         color: #000000
+         position: absolute
+         left: 6%
+         bottom: 2.5%
+         &-mail
+            left: 25%
+   &__ambassadors
+      margin-bottom: 130px
+      &-head
+         text-align: center
+         margin-bottom: 70px
+      &-block
+         min-width: 174px
+         height: 334px
+      &-name
+         font-size: 17px
+         font-weight: bold
+         margin: 15px 0 0 15px
+      &-text
+         font-size: 14px
+         margin: 10px 0 20px 15px
+   &__openings
+      margin-bottom: 0
+      &-wrap
+        margin-top: -200px
+        padding: 80px 0
+        background: #f7f7f7
+      &-head
+         text-align: center
+         margin-top: 0
+         
+         margin-bottom: 50px
+      &-btn
+         display: block
+      &-button
+         text-align: center
+         margin: 50px auto
+         max-width: 180px
+         display: block
+         
+      & .row
+         margin-bottom: 20px
+      &-list
+         list-style: disk
+         margin-left: 80px
+         
+         & h3
+            font-size: 24px
+            font-weight: bold
+            margin-top: 30px
+            margin-bottom: 20px
+         & p
+            font-size: 18px
+
+
+         
+     
+
+
+         
+.footer
+   background: $navy
+   padding-top: 40px
+   padding-bottom: 10px
+   position: relative
+   &-info
+      font-size: 15px
+      color: #ffffff
+      line-height: 27px
+      &-mail
+         display: block
+         color: $coral
+         margin-top: 8px
+   &-invite
+      color: #ffffff
+      font-size: 18px
+      font-weight: bold
+      margin-bottom: 100px
+      line-height: 25px
+   &__button
+      margin-top: 10px
+   &__socials
+      color: $coral
+      &-link
+         color: $coral
+         margin-right: 10px
+         &:hover
+            color: darken($coral, 10%)
+            
+   &::after
+      content: ''
+      height: 2px
+      background: #C5DEE3
+      width: 100%
+      position: absolute
+      top: 240px
+      left: 0
+   &__link
+      font-size: 15px
+      color: #ffffff
+      &:hover
+         text-decoration: none
+         color: $coral         
+
+
+/*Responsive*/
+/*992-1200px*/
+
+@media (max-width:1200px)
+
+/*768-992px*/
+@media (max-width:991px)
+   body
+      display: none
+
+/*576-768px*/
+@media (max-width:768px)
+   body
+      display: none
+/*320-576px*/
+@media (max-width:576px)
+	body
+      display: none
