@@ -13,6 +13,22 @@ window.onload = function(){
   }
 }
 
+//3d карточка
+const card = document.querySelector('.portrait');
+card.addEventListener('mousemove', startRotate);
+card.addEventListener('mouseout', stopRotate);
+
+function startRotate(event) {
+  const portraitWrap = this.querySelector('.portrait-wrap');
+  const halfHeight = portraitWrap.offsetHeight/2;
+  const halfWidth = portraitWrap.offsetWidth/2;
+  portraitWrap.style.transform = 'rotateX('+ - (event.offsetY - halfHeight) / 20 + 'deg)rotateY('+ (event.offsetX - halfWidth) / 15 + 'deg)';
+}
+
+function stopRotate(event){
+  const portraitWrap = this.querySelector('.portrait-wrap');
+  portraitWrap.style.transform = 'rotate(0)';
+}
 
 
 //Всплывающее окно с картинкой

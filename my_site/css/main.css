@@ -152,7 +152,7 @@ h6 {
 	margin: 2rem 0 3.5rem;
 }
 
-.top_btn{
+/* .top_btn{
 	font-size: 1.6rem;
 	font-weight: 700;
 	padding: 0 3.4rem;
@@ -167,8 +167,82 @@ h6 {
 .top_btn:hover{
 	background-color: #fff;
 	color: #339999
+} */
+/* НЕОНОВАЯ КНОПКА */
+
+.top_btn{
+	font-size: 1.6rem;
+	font-weight: 700;
+	display: inline-block;
+	margin: 40px 0 100px;
+	color: #fff;
+	padding: 15px 30px;
+	position: relative;
+	overflow: hidden;
+	letter-spacing: 1.5px;
+} 
+.top_btn:hover{
+	color: #339999;
+	box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+	background-color: #fff;
+	transition: 0.5s;
+	transition-delay: 0.8s;
+}
+.button__line{
+	position: absolute;
+	display: block;
+}
+.button__line--top{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #fff);
+}
+.top_btn:hover .button__line--top{
+	left: 100%;
+	transition: 0.8s;
+	transition-delay: 0s;
 }
 
+.button__line--bottom{
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg, transparent, #fff);
+}
+.top_btn:hover .button__line--bottom{
+	right: 100%;
+	transition: 0.8s;
+	transition-delay: 0s;
+}
+
+.button__line--left{
+	bottom: -100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(0deg, transparent, #fff);
+}
+.top_btn:hover .button__line--left{
+	bottom: 100%;
+	transition: 0.8s;
+	transition-delay: 0.25s;
+}
+
+.button__line--right{
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #fff);
+}
+.top_btn:hover .button__line--right{
+	top: 100%;
+	transition: 0.8s;
+	transition-delay: 0.25s;
+}
 
 
 /*ABOUT ME SECTION*/
@@ -188,7 +262,14 @@ h6 {
 }
 .portrait{
 	max-width: 542px;
-	max-height: 650px;
+	max-height: 680px;
+	perspective: 1500px;
+	transform-style: preserve-3d;
+
+}
+.portrait-wrap{
+	transition: transform 0.2s;
+	
 }
 
 .skills_desk{
@@ -417,9 +498,11 @@ h6 {
     margin-bottom: 25px;
     resize: none;	
 }
-.form button{
+
+
+/* .form button{
 	display: block;
-    border: 1px solid #888;
+   border: 1px solid #888;
     color: #555;
     font-weight: 700;
     letter-spacing: 1px;
@@ -432,10 +515,86 @@ h6 {
 }
 .form button:hover{
 	background-color: #339999	;
-}
+} */
 .form button:focus{
 	outline: none;
 }
+.submit__btn{
+	display: block;
+	color: #339999;
+	font-weight: 700;
+	font-size: 1.6rem;
+	padding: 15px 30px;
+	overflow: hidden;
+	background-color: #fff;
+	position: relative; 
+	border: none;
+	margin: 80px auto 45px;
+}
+
+.submit__btn:hover{
+	color: #fff;
+	box-shadow: 0 0 10px #339999, 0 0 40px #339999, 0 0 80px #339999;
+	background-color: #339999;
+	transition: 0.5s;
+	transition-delay: 0.8s;
+}
+.submit__btn-line{
+	position: absolute;
+	display: block;
+}
+.submit__btn-line--top{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #339999);
+}
+.submit__btn:hover .submit__btn-line--top{
+	left: 100%;
+	transition: 0.8s;
+	transition-delay: 0s;
+}
+
+.submit__btn-line--bottom{
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg, transparent, #339999);
+}
+.submit__btn:hover .submit__btn-line--bottom{
+	right: 100%;
+	transition: 0.8s;
+	transition-delay: 0s;
+}
+
+.submit__btn-line--left{
+	bottom: -100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(0deg, transparent, #339999);
+}
+.submit__btn:hover .submit__btn-line--left{
+	bottom: 100%;
+	transition: 0.8s;
+	transition-delay: 0.25s;
+}
+
+.submit__btn-line--right{
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #339999);
+}
+.submit__btn:hover .submit__btn-line--right{
+	top: 100%;
+	transition: 0.8s;
+	transition-delay: 0.25s;
+}
+
 .footer{
 	color: #000;
 	text-align: center;
