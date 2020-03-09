@@ -5,3 +5,4 @@
 <a href="klimovichd.github.io/budgety">klimovichd.github.io/budgety</a><br>
 <a href="klimovichd.github.io/dist">klimovichd.github.io/irvas-okna</a><br>
 <a href="klimovichd.github.io/bicycle">klimovichd.github.io/bicycle</a><br>
+<a href="klimovichd.github.io/bicycle2">klimovichd.github.io/bicycle-webpack</a><br>
