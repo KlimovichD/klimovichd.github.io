@@ -6,3 +6,4 @@
 <a href="klimovichd.github.io/dist">klimovichd.github.io/irvas-okna</a><br>
 <a href="klimovichd.github.io/bicycle">klimovichd.github.io/bicycle</a><br>
 <a href="klimovichd.github.io/bicycle 2">klimovichd.github.io/bicycle-webpack</a><br>
+<a href="https://relaxed-heyrovsky-401253.netlify.app/">klimovichd.github.io/belaz</a><br>
