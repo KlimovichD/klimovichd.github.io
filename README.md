@@ -7,3 +7,4 @@
 <a href="klimovichd.github.io/bicycle">klimovichd.github.io/bicycle</a><br>
 <a href="klimovichd.github.io/bicycle 2">klimovichd.github.io/bicycle-webpack</a><br>
 <a href="https://relaxed-heyrovsky-401253.netlify.app/">klimovichd.github.io/belaz</a><br>
+<a href="https://xenodochial-booth-9bd7ae.netlify.app/index.html">klimovichd.github.io/color-flipper</a><br>
